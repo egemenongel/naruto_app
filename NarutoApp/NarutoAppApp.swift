@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 @main
 struct NarutoAppApp: App {
+    @StateObject private var viewModel = CharactersViewModel()
+    init()  {    
+        let downloader = KingfisherManager.shared.downloader
+        downloader.downloadTimeout = 15.0
+      
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+       
+            HomeView()
         }
     }
 }

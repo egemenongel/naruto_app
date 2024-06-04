@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct CharactersView: View {
+
+    @EnvironmentObject private var vm: CharactersViewModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+                List { ForEach(vm.allCharacters){
+                character in
+                        CharacterCard(character: character, vm: vm)
+                }
+            }
+        }
+        .navigationTitle("Characters")
     }
 }
 
-#Preview {
-    CharactersView()
+struct CharactersView_Previews: PreviewProvider {
+    static var previews: some View {
+        CharactersView()
+            .environmentObject(dev.vm)
+    }
 }
+
+

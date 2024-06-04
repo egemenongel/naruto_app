@@ -9,43 +9,43 @@ import Foundation
 
 // MARK: - Characters
 
-struct CharactersModel: Codable {
+struct CharactersModel: Codable, Equatable {
     let characters: [CharacterModel]?
 }
 
 // MARK: - Character
-struct CharacterModel: Codable, Identifiable {
+struct CharacterModel: Codable, Identifiable, Equatable {
     let id: Int?
     let name: String?
     let images: [String]?
     let debut: Debut?
     let jutsu: [String]?
-    let personal: Personal?
+//    let personal: Personal?
     let rank: Rank?
-    let voiceActors: VoiceActors?
+//    let voiceActors: VoiceActors?
 }
 
 // MARK: - Debut
-struct Debut: Codable {
+struct Debut: Codable, Equatable {
     let anime, appearsIn: String?
 }
 
 // MARK: - Personal
-struct Personal: Codable {
-    let sex, affiliation, clan: String?
-}
+//struct Personal: Codable {
+//    let sex, affiliation, clan: String?
+//}
 
 // MARK: - Rank
-struct Rank: Codable {
+struct Rank: Codable, Equatable {
     let ninjaRank: NinjaRank?
 }
 
 // MARK: - NinjaRank
-struct NinjaRank: Codable {
+struct NinjaRank: Codable, Equatable {
     let borutoManga: String?
 }
 
 // MARK: - VoiceActors
-struct VoiceActors: Codable {
-    let japanese: String?
-}
+//struct VoiceActors: Codable {
+//    let japanese: String?
+//}

@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91E22712C0EF0F8003108DE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E22702C0EF0F8003108DE /* UIImageView.swift */; };
+		C91E22732C0EFB87003108DE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E22722C0EFB87003108DE /* ImageLoader.swift */; };
 		C98376A22C00EA8B00AB128E /* NarutoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376A12C00EA8B00AB128E /* NarutoAppApp.swift */; };
-		C98376A42C00EA8B00AB128E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376A32C00EA8B00AB128E /* ContentView.swift */; };
+		C98376A42C00EA8B00AB128E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376A32C00EA8B00AB128E /* HomeView.swift */; };
 		C98376A62C00EA8D00AB128E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98376A52C00EA8D00AB128E /* Assets.xcassets */; };
 		C98376A92C00EA8D00AB128E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98376A82C00EA8D00AB128E /* Preview Assets.xcassets */; };
 		C98376B32C00EA8D00AB128E /* NarutoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376B22C00EA8D00AB128E /* NarutoAppTests.swift */; };
 		C98376BD2C00EA8D00AB128E /* NarutoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376BC2C00EA8D00AB128E /* NarutoAppUITests.swift */; };
 		C98376BF2C00EA8D00AB128E /* NarutoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376BE2C00EA8D00AB128E /* NarutoAppUITestsLaunchTests.swift */; };
+		C98376CD2C00ED2900AB128E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376CC2C00ED2900AB128E /* Color.swift */; };
+		C98376D02C00F64B00AB128E /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376CF2C00F64B00AB128E /* NetworkingManager.swift */; };
+		C98376D32C00F67600AB128E /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376D22C00F67600AB128E /* CharactersService.swift */; };
+		C98376D62C00FDEC00AB128E /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376D52C00FDEC00AB128E /* CharactersModel.swift */; };
+		C98376DA2C00FED800AB128E /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376D92C00FED800AB128E /* CharactersView.swift */; };
+		C98376DD2C00FEF400AB128E /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376DC2C00FEF400AB128E /* CharactersViewModel.swift */; };
+		C98376DF2C011E3500AB128E /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98376DE2C011E3500AB128E /* PreviewProvider.swift */; };
+		C99B6EFF2C03B6E900CBA278 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C99B6EFE2C03B6E900CBA278 /* Kingfisher */; };
+		C9E571422C0233CE0022E87B /* CharacterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E571412C0233CE0022E87B /* CharacterCard.swift */; };
+		C9E573FF2C01EBBF00054784 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E573FE2C01EBBF00054784 /* UIScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C91E22702C0EF0F8003108DE /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		C91E22722C0EFB87003108DE /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		C983769E2C00EA8B00AB128E /* NarutoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NarutoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98376A12C00EA8B00AB128E /* NarutoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarutoAppApp.swift; sourceTree = "<group>"; };
-		C98376A32C00EA8B00AB128E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C98376A32C00EA8B00AB128E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C98376A52C00EA8D00AB128E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C98376A82C00EA8D00AB128E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C98376AE2C00EA8D00AB128E /* NarutoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NarutoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +58,15 @@
 		C98376B82C00EA8D00AB128E /* NarutoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NarutoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98376BC2C00EA8D00AB128E /* NarutoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarutoAppUITests.swift; sourceTree = "<group>"; };
 		C98376BE2C00EA8D00AB128E /* NarutoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarutoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C98376CC2C00ED2900AB128E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C98376CF2C00F64B00AB128E /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		C98376D22C00F67600AB128E /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
+		C98376D52C00FDEC00AB128E /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
+		C98376D92C00FED800AB128E /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		C98376DC2C00FEF400AB128E /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		C98376DE2C011E3500AB128E /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		C9E571412C0233CE0022E87B /* CharacterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCard.swift; sourceTree = "<group>"; };
+		C9E573FE2C01EBBF00054784 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99B6EFF2C03B6E900CBA278 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +118,14 @@
 		C98376A02C00EA8B00AB128E /* NarutoApp */ = {
 			isa = PBXGroup;
 			children = (
+				C9E5713F2C02338A0022E87B /* Components */,
+				C98376D72C00FEB900AB128E /* Features */,
+				C98376D42C00FDE100AB128E /* Models */,
+				C98376D12C00F66800AB128E /* Services */,
+				C98376CE2C00F63C00AB128E /* Utilities */,
+				C98376CB2C00ED1E00AB128E /* Extensions */,
 				C98376A12C00EA8B00AB128E /* NarutoAppApp.swift */,
-				C98376A32C00EA8B00AB128E /* ContentView.swift */,
+				C98376A32C00EA8B00AB128E /* HomeView.swift */,
 				C98376A52C00EA8D00AB128E /* Assets.xcassets */,
 				C98376A72C00EA8D00AB128E /* Preview Content */,
 			);
@@ -127,6 +157,75 @@
 			path = NarutoAppUITests;
 			sourceTree = "<group>";
 		};
+		C98376CB2C00ED1E00AB128E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C98376CC2C00ED2900AB128E /* Color.swift */,
+				C98376DE2C011E3500AB128E /* PreviewProvider.swift */,
+				C9E573FE2C01EBBF00054784 /* UIScreen.swift */,
+				C91E22702C0EF0F8003108DE /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C98376CE2C00F63C00AB128E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C98376CF2C00F64B00AB128E /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C98376D12C00F66800AB128E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C98376D22C00F67600AB128E /* CharactersService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C98376D42C00FDE100AB128E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C98376D52C00FDEC00AB128E /* CharactersModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C98376D72C00FEB900AB128E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C98376D82C00FEC100AB128E /* Characters */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C98376D82C00FEC100AB128E /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				C9E571402C0233C40022E87B /* Views */,
+				C98376D92C00FED800AB128E /* CharactersView.swift */,
+				C98376DC2C00FEF400AB128E /* CharactersViewModel.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		C9E5713F2C02338A0022E87B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C91E22722C0EFB87003108DE /* ImageLoader.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C9E571402C0233C40022E87B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9E571412C0233CE0022E87B /* CharacterCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +242,9 @@
 			dependencies = (
 			);
 			name = NarutoApp;
+			packageProductDependencies = (
+				C99B6EFE2C03B6E900CBA278 /* Kingfisher */,
+			);
 			productName = NarutoApp;
 			productReference = C983769E2C00EA8B00AB128E /* NarutoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +317,9 @@
 				Base,
 			);
 			mainGroup = C98376952C00EA8B00AB128E;
+			packageReferences = (
+				C9E571432C0236870022E87B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C983769F2C00EA8B00AB128E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +362,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C98376A42C00EA8B00AB128E /* ContentView.swift in Sources */,
+				C98376DD2C00FEF400AB128E /* CharactersViewModel.swift in Sources */,
+				C98376A42C00EA8B00AB128E /* HomeView.swift in Sources */,
+				C98376D02C00F64B00AB128E /* NetworkingManager.swift in Sources */,
 				C98376A22C00EA8B00AB128E /* NarutoAppApp.swift in Sources */,
+				C91E22712C0EF0F8003108DE /* UIImageView.swift in Sources */,
+				C9E571422C0233CE0022E87B /* CharacterCard.swift in Sources */,
+				C98376D62C00FDEC00AB128E /* CharactersModel.swift in Sources */,
+				C98376CD2C00ED2900AB128E /* Color.swift in Sources */,
+				C98376DA2C00FED800AB128E /* CharactersView.swift in Sources */,
+				C98376DF2C011E3500AB128E /* PreviewProvider.swift in Sources */,
+				C98376D32C00F67600AB128E /* CharactersService.swift in Sources */,
+				C9E573FF2C01EBBF00054784 /* UIScreen.swift in Sources */,
+				C91E22732C0EFB87003108DE /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +704,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9E571432C0236870022E87B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C99B6EFE2C03B6E900CBA278 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C98376962C00EA8B00AB128E /* Project object */;
 }
